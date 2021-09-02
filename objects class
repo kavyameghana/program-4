@@ -1,0 +1,34 @@
+import java.util.*;
+class Employee
+{
+int dateofJoining;
+double sal;
+String ename;
+public void accept()
+{
+   System.out.println("Enter the employee details");
+Scanner in=new Scanner(System.in);
+dateofJoining=in.nextInt();
+ename=in.next();
+sal=in.nextDouble();
+}
+public void display()
+{
+   System.out.println("employee no=" +dateofJoining);
+   System.out.println("employee name no="+ename);
+   System.out.println("employee salary=" +sal);
+  }
+}
+
+public class emp
+{
+ public static void main(String[] args)
+{
+Employee e1=new Employee();
+ e1.accept();
+ e1.display();
+Employee e2=new Employee();
+ e2.accept();
+ e2.display();
+}
+}
